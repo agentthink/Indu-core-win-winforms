@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- 任务管理器主行 / exe 文件属性显示的名字取自 AssemblyTitle（Win32 FileDescription，编译期烘焙）。
+         窗口标题走 Menu.json 的 MenuName（运行期读取，现场改名不必重编译）——两者分工不同，默认值保持一致。 -->
+    <AssemblyTitle>IFA 产线控制系统</AssemblyTitle>
+    <!-- 生产 exe 图标（仅 WinExe 生效；Library 项目设置无效）。
+         跨项目指向 FormMain 的图标源文件，与 FormMain 运行时窗口图标（Form.Icon）共用同一份物理文件，换图标只需改一处。 -->
+    <ApplicationIcon>..\Taoyl.UI.FormMain\Resources\app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  
+
+  <ItemGroup>
+
+    <!-- 直接引用 = 依赖链实账：组合根 Module 注册代码直接 using 的程序集必须逐条显式列出，
+         禁止依赖传递引用编译（传递引用断了会让组合根毫无征兆编不过）。新增直接 using 即补一条。 -->
+    <ProjectReference Include="..\Taoyl.Application.Business\Taoyl.Application.Business.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.ProcessMonitoring\Taoyl.Application.ProcessMonitoring.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Alarm\Taoyl.Application.Alarm.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Audit\Taoyl.Application.Audit.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.AuthService\Taoyl.Application.AuthService.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Product\Taoyl.Application.Product.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Configuration\Taoyl.Application.Configuration.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.TaskProcess\Taoyl.Application.TaskProcess.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Device\Taoyl.Application.Device.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.DataBase\Taoyl.Application.DataBase.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.FileUtil\Taoyl.Application.FileUtil.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.LogDriver\Taoyl.Application.LogDriver.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.MesDriver\Taoyl.Application.MesDriver.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.PlcDriver\Taoyl.Application.PlcDriver.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.Share\Taoyl.Application.Share.csproj" />
+    <ProjectReference Include="..\Taoyl.Application.TranslateDriver\Taoyl.Application.TranslateDriver.csproj" />
+    <ProjectReference Include="..\Taoyl.UI.FormMain\Taoyl.UI.FormMain.csproj" />
+    <ProjectReference Include="..\Taoyl.UI.Pages\Taoyl.UI.Pages.csproj" />
+  </ItemGroup>
+
+
+	<!-- 首次构建拷贝运行时配置模板到输出目录 config\：逐文件「输出目录不存在才拷」，
+	     保护现场修改（现场改过的地址表 / 设备配置不会被构建覆盖）。
+	     源 = 版本库内模板（Taoyl.UI.FormMain\config\），供新建工作区 clone 后编译即用；
+	     现场改动若要回库，需手工把输出目录的文件拷回模板目录再提交。 -->
+	<Target Name="CopyConfigOnce" AfterTargets="AfterBuild">
+		<MakeDir Directories="$(OutputPath)config" Condition="!Exists('$(OutputPath)config')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\DevConfig.json" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\DevConfig.json')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\Menu.json" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\Menu.json')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\BaseConfig.json" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\BaseConfig.json')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\LogConfig.json" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\LogConfig.json')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\Devices.json" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\Devices.json')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\PlcTagPolling_Modbus.xlsx" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\PlcTagPolling_Modbus.xlsx')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\PlcTagPolling_PLC_OmronCip_R.xlsx" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\PlcTagPolling_PLC_OmronCip_R.xlsx')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\PlcTagPolling_PLC_OmronFinsTcp.xlsx" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\PlcTagPolling_PLC_OmronFinsTcp.xlsx')" />
+		<Copy SourceFiles="..\Taoyl.UI.FormMain\config\PlcTagPolling_PLC_S7_R.xlsx" DestinationFolder="$(OutputPath)config" Condition="!Exists('$(OutputPath)config\PlcTagPolling_PLC_S7_R.xlsx')" />
+	</Target>
+	
+</Project>

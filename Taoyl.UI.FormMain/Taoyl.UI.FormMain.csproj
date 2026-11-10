@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net472</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="7.1.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="SunnyUI" Version="3.9.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Config\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- 窗体位于 Views\ 子目录而命名空间为根命名空间：显式指定资源名=类型全名，
+		     避免 SDK 按目录路径生成资源名导致 ComponentResourceManager 找不到（MissingManifestResourceException） -->
+		<EmbeddedResource Update="Views\*.resx">
+			<LogicalName>Taoyl.UI.FormMain.%(Filename).resources</LogicalName>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Taoyl.Application.ProcessMonitoring\Taoyl.Application.ProcessMonitoring.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.AuthService\Taoyl.Application.AuthService.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Audit\Taoyl.Application.Audit.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Configuration\Taoyl.Application.Configuration.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Device\Taoyl.Application.Device.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.LogDriver\Taoyl.Application.LogDriver.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Share\Taoyl.Application.Share.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.TranslateDriver\Taoyl.Application.TranslateDriver.csproj" />
+	</ItemGroup>
+
+</Project>

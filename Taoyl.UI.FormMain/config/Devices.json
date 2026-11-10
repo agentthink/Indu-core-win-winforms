@@ -1,0 +1,120 @@
+{
+  "PLCs": [
+    {
+      "name": "PLC_OmronCip_R",
+      "type": "PLC",
+      "ip": "127.0.0.1",
+      "port": "44818",
+      "protocol": "OmronConnectedCipNet",
+      "ConnectTimeOut": "5000",
+      "ReceiveTimeOut": "1500",
+      "plctagsPath": "./Config/PlcTagPolling_PLC_OmronCip_R.xlsx",
+      "pollingTime": "20",
+      "RetryConnect": "0",
+      "logPath": "./Logs/PLC/PLC_OmronCip_R",
+      "protocolParams": {
+        "ReconnectBaseDelay": "3000",
+        "ReconnectMaxDelay": "90000"
+      }
+    },
+    {
+      "name": "PLC_OmronFinsTcp",
+      "type": "PLC",
+      "ip": "127.0.0.1",
+      "port": "9600",
+      "protocol": "OmronFinsTcpNet",
+      "ConnectTimeOut": "5000",
+      "ReceiveTimeOut": "10000",
+      "plctagsPath": "./Config/PlcTagPolling_PLC_OmronFinsTcp.xlsx",
+      "pollingTime": "100",
+      "RetryConnect": "0",
+      "logPath": "./Logs/PLC/PLC_OmronFinsTcp",
+      "protocolParams": {
+        "PLCType": "CSCJ",
+        "DataFormat": "CDAB"
+      }
+    },
+    {
+      "name": "PLC_ModbusTcp_R",
+      "type": "PLC",
+      "ip": "127.0.0.1",
+      "port": "502",
+      "protocol": "ModbusTcpNet",
+      "ConnectTimeOut": "5000",
+      "ReceiveTimeOut": "10000",
+      "plctagsPath": "./Config/PlcTagPolling_Modbus.xlsx",
+      "pollingTime": "100",
+      "RetryConnect": "0",
+      "logPath": "./Logs/PLC/PLC_ModbusTcp_R",
+      "protocolParams": {
+        "Station": "1",
+        "AddressStartWithZero": "true",
+        "DataFormat": "CDAB",
+        "IsStringReverse": "false"
+      }
+    },
+    {
+      "name": "PLC_ModbusRtu_R",
+      "type": "PLC",
+      "ip": "COM6",
+      "port": "",
+      "protocol": "ModbusRtu",
+      "ConnectTimeOut": "5000",
+      "ReceiveTimeOut": "10000",
+      "plctagsPath": "./Config/PlcTagPolling_Modbus.xlsx",
+      "pollingTime": "100",
+      "RetryConnect": "0",
+      "logPath": "./Logs/PLC/PLC_ModbusRtu_R",
+      "protocolParams": {
+        "Station": "1",
+        "AddressStartWithZero": "true",
+        "DataFormat": "CDAB",
+        "IsStringReverse": "false",
+        "BaudRate": "9600",
+        "DataBits": "8",
+        "StopBits": "one",
+        "Parity": "NONE"
+      }
+    },
+    {
+      "name": "PLC_S7_R",
+      "type": "PLC",
+      "ip": "127.0.0.1",
+      "port": "102",
+      "protocol": "SiemensS7Net",
+      "ConnectTimeOut": "5000",
+      "ReceiveTimeOut": "10000",
+      "plctagsPath": "./Config/PlcTagPolling_PLC_S7_R.xlsx",
+      "pollingTime": "100",
+      "RetryConnect": "0",
+      "logPath": "./Logs/PLC/PLC_S7_R",
+      "protocolParams": {
+        "Slot": "0",
+        "Rack": "0",
+        "PLCType": "S1500"
+      }
+    }
+  ],
+  "scanners": [
+    {
+      "name": "scanner1",
+      "Type": "Scanner",
+      "cmd": "start"
+    },
+    {
+      "name": "scanner2",
+      "Type": "Scanner",
+      "cmd": "start"
+    }
+  ],
+  "scales": [
+    {
+      "name": "scale1",
+      "Type": "Scale",
+      "ip": "127.0.0.1",
+      "port": "502",
+      "DataFormat": "CDAB",
+      "LogPathTemplate": "D:/Logs/ModbusLogs/dev_{0:yyyyMMdd}.txt"
+    }
+  ]
+}

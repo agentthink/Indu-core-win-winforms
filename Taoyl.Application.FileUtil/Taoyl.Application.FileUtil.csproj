@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageReference Include="CsvHelper" Version="33.1.0" />
+	</ItemGroup>
+</Project>

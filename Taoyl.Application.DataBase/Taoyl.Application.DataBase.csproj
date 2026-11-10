@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Mapster" Version="10.0.13" />
+	  <PackageReference Include="MySql.Data" Version="9.5.0" />
+	  <PackageReference Include="SqlSugar" Version="5.1.4.207" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+	  <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Taoyl.Application.Share\Taoyl.Application.Share.csproj" />
+	</ItemGroup>
+
+</Project>

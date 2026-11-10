@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Taoyl.Application.TaskProcess\Taoyl.Application.TaskProcess.csproj" />
+	</ItemGroup>
+
+
+	<!--
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<MakeDir Directories="$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)" Condition="!Exists('$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)')" />
+		<Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)" />
+	</Target>
+	-->
+</Project>

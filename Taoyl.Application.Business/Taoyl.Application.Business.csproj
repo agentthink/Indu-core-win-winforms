@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>7.3</LangVersion>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\Taoyl.Application.Alarm\Taoyl.Application.Alarm.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Communication\Taoyl.Application.Communication.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.TaskProcess\Taoyl.Application.TaskProcess.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Device\Taoyl.Application.Device.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.FileUtil\Taoyl.Application.FileUtil.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.LogDriver\Taoyl.Application.LogDriver.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.MesDriver\Taoyl.Application.MesDriver.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.PlcDriver\Taoyl.Application.PlcDriver.csproj" />
+		<ProjectReference Include="..\Taoyl.Application.Product\Taoyl.Application.Product.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="7.1.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageReference Include="Stateless" Version="5.20.1" />
+	</ItemGroup>
+
+
+
+
+	<!--
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<MakeDir Directories="$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)" Condition="!Exists('$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)')" />
+		<Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="$(MSBuildProjectDirectory)\..\Taoyl.IFALaunch\Dev(DLL)" />
+	</Target>
+	-->
+</Project>

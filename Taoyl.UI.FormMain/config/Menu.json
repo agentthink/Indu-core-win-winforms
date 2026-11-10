@@ -1,0 +1,290 @@
+{
+	"MenuName": "IFA 产线控制系统",
+	"Version": "1.0.1",
+	"Description": "通用上位机系统",
+	"MenuItems": [
+		{
+			"Name": "MainPage",
+			"DisplayName": "主界面",
+			"Description": "系统主界面",
+			"Class": "FormMainPage",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "主界面",
+			"Level": 0,
+			"IsDefault": true,
+			"SortOrder": 0,
+			"Features": [
+				{
+					"Code": "Btn:Process_Start",
+					"Name": "启动生产"
+				},
+				{
+					"Code": "Btn:Process_Pause",
+					"Name": "暂停生产"
+				},
+				{
+					"Code": "Btn:Process_Reset",
+					"Name": "复位"
+				}
+			]
+		},
+		{
+			"Name": "DataHome",
+			"DisplayName": "数据主页",
+			"Description": "最新采集数据实时展示",
+			"Class": "FormProductLive",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "数据展示",
+			"Level": 0,
+			"SortOrder": 1
+		},
+		{
+			"Name": "DataQuery",
+			"DisplayName": "数据查询",
+			"Description": "产品数据筛选查询与导出",
+			"Class": "FormProductQuery",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "数据查询",
+			"Level": 0,
+			"SortOrder": 2,
+			"Features": [
+				{ "Code": "Btn:Product_Export", "Name": "导出产品数据", "Level": 300 }
+			]
+		},
+		{
+			"Name": "ParamSetting",
+			"DisplayName": "参数设置",
+			"Description": "系统参数、基础参数与日志参数设置",
+			"Class": "FormParamSetting",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "设备调试",
+			"Level": 300,
+			"SortOrder": 3,
+			"Features": [
+				{ "Code": "Btn:ParamSystem_Edit",  "Name": "编辑系统参数" },
+				{ "Code": "Btn:ParamSystem_Save",  "Name": "保存系统参数" },
+				{ "Code": "Btn:ParamSystem_Reset", "Name": "重置系统参数" },
+				{ "Code": "Btn:ParamBase_Edit",    "Name": "编辑基础参数" },
+				{ "Code": "Btn:ParamBase_Save",    "Name": "保存基础参数" },
+				{ "Code": "Btn:ParamBase_Reset",   "Name": "重置基础参数" },
+				{ "Code": "Btn:ParamLog_Edit",     "Name": "编辑日志参数" },
+				{ "Code": "Btn:ParamLog_Save",     "Name": "保存日志参数" },
+				{ "Code": "Btn:ParamLog_Reset",    "Name": "重置日志参数" }
+			]
+		},
+		{
+			"Name": "RecipeManager",
+			"DisplayName": "配方设置",
+			"Description": "配方参数配置",
+			"Class": "FormRecipeManager",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "设备调试",
+			"Level": 400,
+			"SortOrder": 4,
+			"Features": [
+				{ "Code": "Btn:Recipe_New",    "Name": "新建配方" },
+				{ "Code": "Btn:Recipe_Edit",   "Name": "编辑配方" },
+				{ "Code": "Btn:Recipe_Save",   "Name": "保存配方" },
+				{ "Code": "Btn:Recipe_Delete", "Name": "删除配方" },
+				{ "Code": "Btn:Recipe_Switch", "Name": "切换配方" },
+				{ "Code": "Btn:Recipe_Import", "Name": "导入配方" },
+				{ "Code": "Btn:Recipe_Export", "Name": "导出配方" }
+			]
+		},
+		{
+			"Name": "ProcessMonitor",
+			"DisplayName": "流程监控",
+			"Description": "流程监控",
+			"Class": "FormProcessMonitor",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "设备调试",
+			"Level": 100,
+			"SortOrder": 5,
+			"Features": [
+				{
+					"Code": "Btn:ProcessMonitor_Start",
+					"Name": "单个启动"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_Pause",
+					"Name": "单个暂停"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_Reset",
+					"Name": "单个复位"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_Init",
+					"Name": "单个初始化"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_InitAll",
+					"Name": "整机初始化"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_ToggleEnabled",
+					"Name": "单个流程启用"
+				},
+				{
+					"Code": "Btn:ProcessMonitor_TogglePauseOthers",
+					"Name": "单个流程异停"
+				}
+			]
+		},
+		{
+			"Name": "AlarmQuery",
+			"DisplayName": "报警查询",
+			"Description": "报警历史查询与导出",
+			"Class": "FormAlarmQuery",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "报警查询",
+			"Level": 100,
+			"SortOrder": 6,
+			"Features": [
+				{ "Code": "Btn:Alarm_Export", "Name": "导出报警记录", "Level": 300 }
+			]
+		},
+		{
+			"Name": "DeviceManager",
+			"DisplayName": "设备管理",
+			"Description": "设备配置与调试",
+			"Icon": "设备调试",
+			"Level": 300,
+			"SortOrder": 7,
+			"Children": [
+				{
+					"Name": "PLCDebug",
+					"DisplayName": "PLC",
+					"Description": "PLC通讯调试",
+					"Class": "FormPLCDebug",
+					"DllName": "Taoyl.UI.Pages",
+					"Icon": "设备调试",
+					"Level": 300,
+					"SortOrder": 0,
+					"Features": [
+						{ "Code": "Btn:PLCDebug_AddPlc",         "Name": "新增连接配置",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_EditPlc",        "Name": "编辑连接配置",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_SavePlc",        "Name": "保存连接配置",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_CancelPlc",      "Name": "取消连接配置编辑", "Level": 500 },
+						{ "Code": "Btn:PLCDebug_DeletePlc",      "Name": "删除连接配置",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_RebuildPlc",     "Name": "重建设备实例",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Connect",        "Name": "连接设备",         "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Disconnect",     "Name": "断开设备",         "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Read",           "Name": "读值测试",         "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Write",          "Name": "写值测试",         "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Import",         "Name": "导入地址表",       "Level": 500 },
+						{ "Code": "Btn:PLCDebug_Export",         "Name": "导出地址表",       "Level": 500 },
+						{ "Code": "Btn:PLCDebug_SaveTag",        "Name": "保存地址表",       "Level": 500 },
+						{ "Code": "Btn:PLCDebug_EditTag",        "Name": "进入地址表编辑",   "Level": 500 },
+						{ "Code": "Btn:PLCDebug_CancelTag",      "Name": "取消地址表编辑",   "Level": 500 },
+						{ "Code": "Btn:PLCDebug_AddRow",         "Name": "地址表新增行",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_RemoveRow",      "Name": "地址表删除行",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_MoveUp",         "Name": "地址表行上移",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_MoveDown",       "Name": "地址表行下移",     "Level": 500 },
+						{ "Code": "Btn:PLCDebug_SetCurrentFreq", "Name": "设当前组刷新频率", "Level": 500 },
+						{ "Code": "Btn:PLCDebug_SetAllFreq",     "Name": "设全部组刷新频率", "Level": 500 }
+					]
+				}
+			]
+		},
+		{
+			"Name": "MesDebug",
+			"DisplayName": "MES 调试",
+			"Description": "MES 接口配置与报文调试",
+			"Class": "FormMesDebug",
+			"DllName": "Taoyl.UI.Pages",
+			"Icon": "设备调试",
+			"Level": 300,
+			"SortOrder": 8,
+			"Features": [
+				{ "Code": "Btn:MesDebug_Add", "Name": "新增接口" },
+				{ "Code": "Btn:MesDebug_Edit", "Name": "编辑接口" },
+				{ "Code": "Btn:MesDebug_Save", "Name": "保存配置" },
+				{ "Code": "Btn:MesDebug_Cancel", "Name": "取消编辑" },
+				{ "Code": "Btn:MesDebug_Delete", "Name": "删除接口" },
+				{ "Code": "Btn:MesDebug_Send", "Name": "发送请求" }
+			]
+		},
+		{
+			"Name": "Settings",
+			"DisplayName": "系统设置",
+			"Description": "系统参数设置",
+			"Icon": "参数信息",
+			"Level": 500,
+			"SortOrder": 9,
+			"Children": [
+				{
+					"Name": "UserManager",
+					"DisplayName": "用户管理",
+					"Description": "用户信息管理",
+					"Class": "FormUserManager",
+					"DllName": "Taoyl.UI.Pages",
+					"Icon": "用户管理",
+					"Level": 500,
+					"SortOrder": 0,
+					"Features": [
+						{
+							"Code": "Btn:UserManager_Add",
+							"Name": "新增用户"
+						},
+						{
+							"Code": "Btn:UserManager_Edit",
+							"Name": "编辑用户"
+						},
+						{
+							"Code": "Btn:UserManager_Delete",
+							"Name": "删除用户"
+						},
+						{
+							"Code": "Btn:UserManager_Import",
+							"Name": "导入用户"
+						},
+						{
+							"Code": "Btn:UserManager_Export",
+							"Name": "导出用户"
+						}
+					]
+				},
+				{
+					"Name": "RoleManager",
+					"DisplayName": "角色管理",
+					"Description": "角色与权限管理",
+					"Class": "FormRoleManager",
+					"DllName": "Taoyl.UI.Pages",
+					"Icon": "用户管理",
+					"Level": 700,
+					"SortOrder": 1,
+					"Features": [
+						{ "Code": "Btn:RoleManager_Add",    "Name": "新增角色" },
+						{ "Code": "Btn:RoleManager_Save",   "Name": "保存角色" },
+						{ "Code": "Btn:RoleManager_Delete", "Name": "删除角色" },
+						{ "Code": "Btn:RoleManager_Reset",  "Name": "重置权限" }
+					]
+				},
+				{
+					"Name": "TranslateViewer",
+					"DisplayName": "多语言管理",
+					"Description": "多语言配置",
+					"Class": "FrmResourceConfig",
+					"DllName": "Taoyl.UI.Pages",
+					"Icon": "语言",
+					"Level": 700,
+					"SortOrder": 2
+				},
+				{
+					"Name": "Audit",
+					"DisplayName": "审计查询",
+					"Description": "操作留痕查询与导出",
+					"Class": "FormAudit",
+					"DllName": "Taoyl.UI.Pages",
+					"Icon": "数据查询",
+					"Level": 700,
+					"SortOrder": 3,
+					"Features": [
+						{ "Code": "Btn:Audit_Export", "Name": "导出审计记录" }
+					]
+				}
+			]
+		}
+	]
+}

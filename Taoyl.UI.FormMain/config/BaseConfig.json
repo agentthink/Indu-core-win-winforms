@@ -1,0 +1,6 @@
+{
+  "MaxSpeed": 200.0,
+  "MinTemperature": 0.0,
+  "MaxTemperature": 200.0,
+  "TimeoutMs": 5000
+}

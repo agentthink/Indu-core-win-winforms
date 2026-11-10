@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="leftTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="uiLine1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="uiLine1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 874</value>
+  </data>
+  <data name="uiLine1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiLine1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 3, 3</value>
+  </data>
+  <data name="uiLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 13</value>
+  </data>
+  <data name="uiLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;uiLine1.Name" xml:space="preserve">
+    <value>uiLine1</value>
+  </data>
+  <data name="&gt;&gt;uiLine1.Type" xml:space="preserve">
+    <value>Sunny.UI.UILine, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;uiLine1.Parent" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;uiLine1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pnlConnStatusTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlConnStatusTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt, style=Bold</value>
+  </data>
+  <data name="pnlConnStatusTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pnlConnStatusTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 3</value>
+  </data>
+  <data name="pnlConnStatusTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="pnlConnStatusTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 43</value>
+  </data>
+  <data name="pnlConnStatusTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="pnlConnStatusTitle.Text" xml:space="preserve">
+    <value>连接状态</value>
+  </data>
+  <data name="pnlConnStatusTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pnlConnStatusTitle.Name" xml:space="preserve">
+    <value>pnlConnStatusTitle</value>
+  </data>
+  <data name="&gt;&gt;pnlConnStatusTitle.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;pnlConnStatusTitle.Parent" xml:space="preserve">
+    <value>leftTopTableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;pnlConnStatusTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblConnStatus.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblConnStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="lblConnStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 7</value>
+  </data>
+  <data name="lblConnStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 3</value>
+  </data>
+  <data name="lblConnStatus.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="lblConnStatus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lblConnStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 39</value>
+  </data>
+  <data name="lblConnStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblConnStatus.Text" xml:space="preserve">
+    <value>uiLine1</value>
+  </data>
+  <data name="&gt;&gt;lblConnStatus.Name" xml:space="preserve">
+    <value>lblConnStatus</value>
+  </data>
+  <data name="&gt;&gt;lblConnStatus.Type" xml:space="preserve">
+    <value>Sunny.UI.UILine, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;lblConnStatus.Parent" xml:space="preserve">
+    <value>leftTopTableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblConnStatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 49</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;leftTopTableLayoutPanel1.Name" xml:space="preserve">
+    <value>leftTopTableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;leftTopTableLayoutPanel1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITableLayoutPanel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;leftTopTableLayoutPanel1.Parent" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;leftTopTableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="leftTopTableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pnlConnStatusTitle" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblConnStatus" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,8,Percent,92" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="uiLine3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="uiLine3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiLine3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="uiLine3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiLine3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 3, 3</value>
+  </data>
+  <data name="uiLine3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 13</value>
+  </data>
+  <data name="uiLine3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;uiLine3.Name" xml:space="preserve">
+    <value>uiLine3</value>
+  </data>
+  <data name="&gt;&gt;uiLine3.Type" xml:space="preserve">
+    <value>Sunny.UI.UILine, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;uiLine3.Parent" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;uiLine3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dashedLinePanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dashedLinePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 68</value>
+  </data>
+  <data name="dashedLinePanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dashedLinePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 803</value>
+  </data>
+  <data name="dashedLinePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dashedLinePanel1.Name" xml:space="preserve">
+    <value>dashedLinePanel1</value>
+  </data>
+  <data name="&gt;&gt;dashedLinePanel1.Type" xml:space="preserve">
+    <value>Taoyl.UI.Pages.DashedLinePanel, Taoyl.UI.Pages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dashedLinePanel1.Parent" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;dashedLinePanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiLine4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="uiLine4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiLine4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 942</value>
+  </data>
+  <data name="uiLine4.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiLine4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 3, 3</value>
+  </data>
+  <data name="uiLine4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 13</value>
+  </data>
+  <data name="uiLine4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;uiLine4.Name" xml:space="preserve">
+    <value>uiLine4</value>
+  </data>
+  <data name="&gt;&gt;uiLine4.Type" xml:space="preserve">
+    <value>Sunny.UI.UILine, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;uiLine4.Parent" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;uiLine4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="leftTableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="leftTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="leftTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="leftTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="leftTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 980</value>
+  </data>
+  <data name="leftTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftTableLayoutPanel.Name" xml:space="preserve">
+    <value>leftTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;leftTableLayoutPanel.Type" xml:space="preserve">
+    <value>Sunny.UI.UITableLayoutPanel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;leftTableLayoutPanel.Parent" xml:space="preserve">
+    <value>mainTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;leftTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="leftTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="uiLine1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="leftTopTableLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="uiLine3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dashedLinePanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="uiLine4" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,5,Percent,2,Percent,82,Percent,2,Percent,5,Percent,2,Percent,2" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="rightTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gvInfoLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gvInfoLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="gvInfoLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gvInfoLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="gvInfoLog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="gvInfoLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="gvInfoLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gvInfoLog.Name" xml:space="preserve">
+    <value>gvInfoLog</value>
+  </data>
+  <data name="&gt;&gt;gvInfoLog.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDataGridView, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;gvInfoLog.Parent" xml:space="preserve">
+    <value>tabInfoLog</value>
+  </data>
+  <data name="&gt;&gt;gvInfoLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabInfoLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="tabInfoLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="tabInfoLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabInfoLog.Text" xml:space="preserve">
+    <value>运行日志</value>
+  </data>
+  <data name="tabWarnLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="tabWarnLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="tabWarnLog.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabWarnLog.Text" xml:space="preserve">
+    <value>警告日志</value>
+  </data>
+  <data name="gvWarnLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gvWarnLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="gvWarnLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gvWarnLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="gvWarnLog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="gvWarnLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="gvWarnLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabInfoLog.Name" xml:space="preserve">
+    <value>tabInfoLog</value>
+  </data>
+  <data name="&gt;&gt;tabInfoLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabInfoLog.Parent" xml:space="preserve">
+    <value>tabControlLog</value>
+  </data>
+  <data name="&gt;&gt;tabInfoLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gvMESLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gvMESLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="gvMESLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gvMESLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="gvMESLog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="gvMESLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="gvMESLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gvMESLog.Name" xml:space="preserve">
+    <value>gvMESLog</value>
+  </data>
+  <data name="&gt;&gt;gvMESLog.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDataGridView, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;gvMESLog.Parent" xml:space="preserve">
+    <value>tabMESLog</value>
+  </data>
+  <data name="&gt;&gt;gvMESLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabMESLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="tabMESLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="tabMESLog.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabMESLog.Text" xml:space="preserve">
+    <value>MES日志</value>
+  </data>
+  <data name="&gt;&gt;tabMESLog.Name" xml:space="preserve">
+    <value>tabMESLog</value>
+  </data>
+  <data name="&gt;&gt;tabMESLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabMESLog.Parent" xml:space="preserve">
+    <value>tabControlLog</value>
+  </data>
+  <data name="&gt;&gt;tabMESLog.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gvErrorLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gvErrorLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="gvErrorLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gvErrorLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="gvErrorLog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="gvErrorLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="gvErrorLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gvErrorLog.Name" xml:space="preserve">
+    <value>gvErrorLog</value>
+  </data>
+  <data name="&gt;&gt;gvErrorLog.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDataGridView, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;gvErrorLog.Parent" xml:space="preserve">
+    <value>tabErrorLog</value>
+  </data>
+  <data name="&gt;&gt;gvErrorLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabErrorLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="tabErrorLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 253</value>
+  </data>
+  <data name="tabErrorLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabErrorLog.Text" xml:space="preserve">
+    <value>错误日志</value>
+  </data>
+  <data name="&gt;&gt;tabErrorLog.Name" xml:space="preserve">
+    <value>tabErrorLog</value>
+  </data>
+  <data name="&gt;&gt;tabErrorLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabErrorLog.Parent" xml:space="preserve">
+    <value>tabControlLog</value>
+  </data>
+  <data name="&gt;&gt;tabErrorLog.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControlLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControlLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt, style=Bold</value>
+  </data>
+  <data name="tabControlLog.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 35</value>
+  </data>
+  <data name="tabControlLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 689</value>
+  </data>
+  <data name="tabControlLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1161, 288</value>
+  </data>
+  <data name="tabControlLog.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabControlLog.Name" xml:space="preserve">
+    <value>tabControlLog</value>
+  </data>
+  <data name="&gt;&gt;tabControlLog.Type" xml:space="preserve">
+    <value>Sunny.UI.UITabControl, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;tabControlLog.Parent" xml:space="preserve">
+    <value>rightTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;tabControlLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlLayout.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="pnlLayout.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pnlLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlLayout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="pnlLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="pnlLayout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="pnlLayout.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="pnlLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1159, 676</value>
+  </data>
+  <data name="pnlLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pnlLayout.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;pnlLayout.Name" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Type" xml:space="preserve">
+    <value>Sunny.UI.UIPanel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Parent" xml:space="preserve">
+    <value>rightTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rightTableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rightTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 0</value>
+  </data>
+  <data name="rightTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rightTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rightTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1167, 980</value>
+  </data>
+  <data name="rightTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rightTableLayoutPanel.Name" xml:space="preserve">
+    <value>rightTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;rightTableLayoutPanel.Type" xml:space="preserve">
+    <value>Sunny.UI.UITableLayoutPanel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;rightTableLayoutPanel.Parent" xml:space="preserve">
+    <value>mainTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;rightTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rightTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tabControlLog" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pnlLayout" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,70,Percent,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="mainTableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mainTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="mainTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1556, 980</value>
+  </data>
+  <data name="mainTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainTableLayoutPanel.Name" xml:space="preserve">
+    <value>mainTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;mainTableLayoutPanel.Type" xml:space="preserve">
+    <value>Sunny.UI.UITableLayoutPanel, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+  <data name="&gt;&gt;mainTableLayoutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="leftTableLayoutPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="rightTableLayoutPanel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,75" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1556, 980</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormMainPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMainPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Sunny.UI.UIPage, SunnyUI, Version=3.9.1.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1</value>
+  </data>
+</root>

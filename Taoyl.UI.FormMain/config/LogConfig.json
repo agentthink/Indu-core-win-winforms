@@ -1,0 +1,34 @@
+﻿{
+  "RootPath": "D:\\Logs",
+  "Encoding": "Utf8Bom",
+  "Debug": {
+    "Category": "Debug",
+    "SplitPeriod": "Day",
+    "KeepDays": 180,
+    "FileNamePrefix": null
+  },
+  "Info": {
+    "Category": "Info",
+    "SplitPeriod": "Day",
+    "KeepDays": 180,
+    "FileNamePrefix": null
+  },
+  "Warn": {
+    "Category": "Warn",
+    "SplitPeriod": "Day",
+    "KeepDays": 180,
+    "FileNamePrefix": null
+  },
+  "Error": {
+    "Category": "Error",
+    "SplitPeriod": "Day",
+    "KeepDays": 180,
+    "FileNamePrefix": null
+  },
+  "MES": {
+    "Category": "MES",
+    "SplitPeriod": "Day",
+    "KeepDays": 180,
+    "FileNamePrefix": null
+  }
+}

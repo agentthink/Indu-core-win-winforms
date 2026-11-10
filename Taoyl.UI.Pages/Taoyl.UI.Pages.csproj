@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 本项目属于 Taoyl.IFA 产线设备上位机框架：https://gitee.com/taoyanl/Taoyl.IFA （MIT） -->
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net472</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<LangVersion>10.0</LangVersion>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SunnyUI" Version="3.9.1" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Autofac" Version="7.1.0" />
+		<PackageReference Include="MiniExcel" Version="1.42.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.11.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+		<!-- 审计留痕导出：仅为 AuditExportRow 的中文表头 [Name] 特性而显式引用（与 FileUtil 同版本） -->
+		<PackageReference Include="CsvHelper" Version="33.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Taoyl.Application.ProcessMonitoring\Taoyl.Application.ProcessMonitoring.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Alarm\Taoyl.Application.Alarm.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.AuthService\Taoyl.Application.AuthService.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Audit\Taoyl.Application.Audit.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Product\Taoyl.Application.Product.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Configuration\Taoyl.Application.Configuration.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.TaskProcess\Taoyl.Application.TaskProcess.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Device\Taoyl.Application.Device.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.MesDriver\Taoyl.Application.MesDriver.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.FileUtil\Taoyl.Application.FileUtil.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.LogDriver\Taoyl.Application.LogDriver.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.PlcDriver\Taoyl.Application.PlcDriver.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.Share\Taoyl.Application.Share.csproj" />
+	  <ProjectReference Include="..\Taoyl.Application.TranslateDriver\Taoyl.Application.TranslateDriver.csproj" />
+	  <ProjectReference Include="..\Taoyl.UI.FormMain\Taoyl.UI.FormMain.csproj" />
+	</ItemGroup>
+
+
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- 窗体位于 Views\ 子目录而命名空间为根命名空间：显式指定资源名=类型全名，
+		     避免 SDK 按目录路径生成资源名导致 ComponentResourceManager 找不到（MissingManifestResourceException） -->
+		<EmbeddedResource Update="Views\*.resx">
+			<LogicalName>Taoyl.UI.Pages.%(Filename).resources</LogicalName>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

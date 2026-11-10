@@ -1,0 +1,13 @@
+{
+  "UILanguage": "zh_CN",
+  "DB": {
+    "DBType": "Sqlite",
+    "ConnectionString": "Data Source=Data\\tyl_ifa.db;Version=3;Journal Mode=WAL;BusyTimeout=5000;Pooling=True;"
+  },
+  "autoLogin": {
+    "EnableCardLogin": "true",
+    "CardInputLength": 8,
+    "KeyInputTimeout": 100
+  },
+  "autoLogoutTime": 180
+}
